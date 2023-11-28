@@ -1,0 +1,181 @@
+/* fonts */
+@font-face {
+  font-family: "Agbalumo";
+  src: url(fonts/Agbalumo/Agbalumo-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Open_Sans";
+  src: url(fonts/Open_Sans/static/OpenSans-bold.ttf);
+}
+
+@font-face {
+  font-family: "Cherry";
+  src: url(fonts/Cherry_Unicode.ttf);
+}
+/* end of fonts  */
+
+/* disappear scroll bar */
+::-webkit-scrollbar {
+  display: none;
+}
+/* disappear scroll bar */
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Agbalumo", "Open_Sans", sans-serif;
+}
+/* end of css reset */
+
+/* background */
+.background {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  background: linear-gradient(to right, #2c3e50, #0e2f44);
+}
+/* end of background */
+
+/* nav tabs */
+.nav-link {
+  font-family: "Open_Sans";
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #d63384;
+  /* background: #57d0b8; */
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+/* end of nav tabs */
+
+/* main-content */
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-content h1 {
+  font-size: 63px;
+}
+
+.content-page {
+  margin-top: 10%;
+}
+/* end of main-content */
+
+/* btn  */
+.showFestBtn {
+  font-family: "Open_Sans";
+  background: #d63384;
+  padding: 12px 32px;
+  color: #fff;
+}
+
+.showFestBtn:hover {
+  background: transparent;
+  border: 1px solid #d63384;
+  color: #d63384;
+  transition: 0.5s;
+}
+
+/* months section back btn */
+.btn-back {
+  font-size: 30px;
+}
+/* end of btn */
+
+/* months section */
+.months {
+  margin-top: 6%;
+}
+
+.card {
+  border-radius: 30px;
+}
+
+.layer {
+  border-radius: 5%;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(156, 142, 142, 0.7);
+}
+
+.flower-images {
+  border-radius: 5%;
+}
+
+.month-name {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover .month-name {
+  bottom: 49%;
+  opacity: 1;
+}
+/* months section */
+
+/* detail-page */
+.detail-page,
+.detail-page p,
+.detail-page button {
+  color: #000;
+}
+
+.detail-page p {
+  font-size: 18px;
+}
+/* end of detail-page */
+
+/* Responsive css */
+@media screen and (max-width: 1278px) {
+  .main-content h1 {
+    font-size: 2.5em; /* which is default font size */
+  }
+
+  .months {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+/* end of responsive */
+
+/* myanmar text fonts */
+.myanmar-text {
+  font-family: "Cherry";
+}
+/* end of mm text */
