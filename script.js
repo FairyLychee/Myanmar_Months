@@ -85,7 +85,7 @@ async function monthList() {
 
         // i will increase with itemPerRow so i make j = i ;
         for (let j = i; j < i + itemPerRow; j++) {
-            let column = $(`<div class="col-lg-3 col-md-4 col-12 mb-4"></div>`);
+            let column = $(`<div class="col-md-3 col-12 mb-4"></div>`);
             // images 
             let imgHolder = $(`<div class="card border-dark position-relative"></div>`);
             let img = $(`<img class="flower-images">`);

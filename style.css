@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Open_Sans";
-  src: url(fonts/Open_Sans/static/OpenSans-bold.ttf);
+  src: url(fonts/Open_Sans/static/OpenSans-Bold.ttf);
 }
 
 @font-face {
@@ -83,7 +83,7 @@
 
 /* btn  */
 .showFestBtn {
-  font-family: "Open_Sans";
+  font-family: "Open_Sans" !important;
   background: #d63384;
   padding: 12px 32px;
   color: #fff;
